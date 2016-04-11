@@ -1,0 +1,20 @@
+How Problematic Are You? is an API intended for Twitter Users.
+
+Any person with an active Twitter account can log in with their
+account and can receive a result of how Problematic their
+tweets are.
+
+In social media, especially in sites like Twitter and tumblr,
+exist many groups passionate about social justice. Many
+use the term 'problematic' for when a person (often times
+a celebrity) says something off-color.
+
+This app is similar to Social Santa, an app that counts how
+many profane words in your tweets. You are then classified as
+naughty or nice.
+
+This would operate on the same logic. The more profanity or
+slurs used, the higher the 'problematic' rank.
+
+
+Example: http://socialsanta.co/
