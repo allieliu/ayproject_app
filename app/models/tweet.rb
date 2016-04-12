@@ -1,7 +1,6 @@
 require "httparty"
 require "base64"
 
-token="AAAAAAAAAAAAAAAAAAAAAApaugAAAAAA%2Bw7iy7XOsIoWUzn7yBpRwFgTAUo%3DSdBBY6luFSpFPSy8RuMg3jfm3JyTMBJGo0Kyc2zhhxKZgMxbAC"
 
 class Tweet
   def self.access_token
@@ -11,6 +10,7 @@ class Tweet
     # body = "grant_type=client_credentials"
     HTTParty.post(url,
       :headers => {
+        "Token" => "AAAAAAAAAAAAAAAAAAAAAApaugAAAAAA%2Bw7iy7XOsIoWUzn7yBpRwFgTAUo%3DSdBBY6luFSpFPSy8RuMg3jfm3JyTMBJGo0Kyc2zhhxKZgMxbAC",
         "Authorization" => "Basic #{enc}",
         "Content-Type"  => "application/x-www-form-urlencoded;charset=UTF-8",
         "User-Agent" => "My Twitter App"
