@@ -9,6 +9,10 @@ Rails.application.routes.draw do
 
   get '/auth/:provider/callback', to: 'sessions#create'
 
+  get '/twitter' => 'sessions#new'
+
+  get '/auth/:provider/callback' => 'authentications#create'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

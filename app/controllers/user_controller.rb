@@ -12,5 +12,20 @@ class << self
   end
 end
 
+def new
+  @self= Self.new
+end
+
+def show
+  redirect_to('/') unless session[:uid]
+end
+
+
+  def update
+    user = User.find_by(id: params[:id])
+    user.update(user_params)
+    redirect_to profile_path
+  end
+
 
 end

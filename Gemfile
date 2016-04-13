@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'omniauth-twitter'
 
+gem 'twitter'
+
 gem 'httparty'
 
 # Use jquery as the JavaScript library
