@@ -1,0 +1,16 @@
+<%= form_for(Prob.new) do |f| %>
+
+  <div>
+  <%= f.label(:word) %>
+  <%= f.text_field(:word) %>
+  </div>
+
+  <div>
+  <%= f.label(:definition) %>
+  <%= f.text_field(:definition) %>
+  </div>
+
+  <%= f.submit %>
+
+<% end %>
+

@@ -13,6 +13,11 @@ Rails.application.routes.draw do
 
   get '/twitter' => 'sessions#new'
 
+  get '/probs' => 'probs#index'
+
+  get '/probs/new' => 'probs#new'
+
+  post '/probs' => 'probs#create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
