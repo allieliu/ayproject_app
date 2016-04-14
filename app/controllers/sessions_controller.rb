@@ -1,16 +1,13 @@
 class SessionsController < ApplicationController
 
-def create
+  def create
     @user = from_omniauth(request.env['omniauth.auth'])
     session[:user_id] = @user.id
     flash[:success] = "Welcome, #{@user.name}!"
-  # rescue
-  #   flash[:warning] = "There was an error while trying to authenticate you..."
-  # end
-  redirect_to "/user"
-end
+    redirect_to "/user"
+  end
 
-private
+  private
   def from_omniauth(auth_hash)
     user = User.new(uid: auth_hash['uid'], provider: auth_hash['provider'])
     user.name = auth_hash['info']['name']
@@ -20,7 +17,5 @@ private
     user.save!
     user
   end
-
-
 
 end
