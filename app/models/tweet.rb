@@ -1,6 +1,5 @@
 require "httparty"
 require "base64"
-require "pry"
 
 
 # {"token_type"=>"bearer", "access_token"=>"AAAAAAAAAAAAAAAAAAAAAApaugAAAAAA%2Bw7iy7XOsIoWUzn7yBpRwFgTAUo%3DSdBBY6luFSpFPSy8RuMg3jfm3JyTMBJGo0Kyc2zhhxKZgMxbAC"}
