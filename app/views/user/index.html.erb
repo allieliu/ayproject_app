@@ -1,0 +1,17 @@
+User: <%= @user.name %> <%= image_tag @user.image_url %>
+
+<button>Evaluate Your Tweets!</button>
+
+<div class="row" style="margin-top: 16px;">
+    <div class="span5">
+    <h1>User Timeline</h1>
+      <table class="table table-striped">
+        <tr>
+          <th>Text</th>
+        </tr>
+        <% @user_timeline.each do |t| %>
+         <tr>
+           <th><%= t.text %></th>
+         </tr>
+        <% end %>
+    </table>

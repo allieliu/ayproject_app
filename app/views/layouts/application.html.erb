@@ -8,11 +8,13 @@
 </head>
 <body>
 
-<ul class="nav navbar-nav">
-  <li><%= link_to 'Sign into Twitter', '/auth/twitter' %></li>
-</ul>
+<div class="nav navbar-nav">
+  <%= link_to 'Sign into Twitter', '/auth/twitter?force_login=true' %>
+</div>
 
 <%= yield %>
+
+
 
 </body>
 </html>

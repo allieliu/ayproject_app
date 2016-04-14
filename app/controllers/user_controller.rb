@@ -16,6 +16,10 @@ def new
   @self= Self.new
 end
 
+def index
+  @user = User.find(session[:user_id])
+end
+
 def show
   redirect_to('/') unless session[:uid]
 end

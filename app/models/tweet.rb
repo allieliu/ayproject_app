@@ -35,6 +35,17 @@ class Tweet
   end
 end
 
+
+
+# class User
+#   url= "https://api.twitter.com/1.1/users/show.json"
+#   enc= Base64.strict_encode64(ENV['twitter_key'] + ":" + ENV['twitter_secret'])
+#   response = HTTParty.post(url,
+#     :headers =>
+#     "user_id" =>
+#     "screen_name" =>
+#     "include_entities" =>
+
 request = Tweet.access_token
 puts request
 
