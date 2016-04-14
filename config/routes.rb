@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get '/sessions/create'
 
-  get '/auth/:provider/callback', to: 'sessions#create'
+  get '/auth/:provider/callback' => 'sessions#create'
 
   get '/twitter' => 'sessions#new'
 
