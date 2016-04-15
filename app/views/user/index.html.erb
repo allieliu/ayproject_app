@@ -1,6 +1,12 @@
 User: <%= @user.name %> <%= image_tag @user.image_url %>
 
 
-<form method="get" action="/probs">
+<form method="get" action="/probs/new">
   <button type="submit">Add a word to the Twitionary!</button>
+</form>
+
+<form method="get" action="/probs">
+  <button type="submit">View current entries</button>
+</form>
+
 
