@@ -1,20 +1,12 @@
-How Problematic Are You? is an API intended for Twitter Users.
+Twitionary is an API intended for Twitter Users.
+
+The evolution of slang is a quickly evolving beast. One day your mutuals could be saying 'dragged' or 'clocked', and the next day 'flop'. Don't even know what a mutual is? You're in the right place!
 
 Any person with an active Twitter account can log in with their
-account and can receive a result of how Problematic their
-tweets are.
+account and can enter any slang with their definition. Users can also view what others have already submitted.
 
-In social media, especially in sites like Twitter and tumblr,
-exist many groups passionate about social justice. Many
-use the term 'problematic' for when a person (often times
-a celebrity) says something off-color.
+To access Twitionary, all you need is the Heroku link:
+(https://warm-mountain-12478.herokuapp.com/ "Heroku")
 
-This app is similar to Social Santa, an app that counts how
-many profane words in your tweets. You are then classified as
-naughty or nice.
+(https://trello.com/b/6xof1NLx/twitionary "Trello")
 
-This would operate on the same logic. The more profanity or
-slurs used, the higher the 'problematic' rank.
-
-
-Example: http://socialsanta.co/
