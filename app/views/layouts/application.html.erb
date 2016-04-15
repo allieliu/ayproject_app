@@ -12,6 +12,9 @@
   <%= link_to 'Sign into Twitter', '/auth/twitter?force_login=true' %>
 </div>
 
+<%= link_to "Log Out", logout_path, method: :delete %>
+
+
 <%= yield %>
 
 

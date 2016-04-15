@@ -7,6 +7,12 @@ class SessionsController < ApplicationController
     redirect_to "/user"
   end
 
+  def destroy
+    session.delete(:user_id)
+    @current_user = nil
+    redirect_to '/'
+  end
+
   private
   def from_omniauth(auth_hash)
     user = User.new(uid: auth_hash['uid'], provider: auth_hash['provider'])

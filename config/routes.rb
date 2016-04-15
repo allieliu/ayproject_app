@@ -27,6 +27,8 @@ Rails.application.routes.draw do
 
   patch 'probs/:id' => 'probs#update'
 
+  delete '/logout' => 'sessions#destroy'
+
 
 
   # Example of regular route:
