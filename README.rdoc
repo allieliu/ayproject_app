@@ -1,7 +1,7 @@
-## To access Twitionary, all you need is the Heroku link:
+To access Twitionary, all you need is the Heroku link:
 https://warm-mountain-12478.herokuapp.com/
 
-## Trello:
+Trello:
 https://trello.com/b/6xof1NLx/twitionary
 
 Twitionary is an API intended for Twitter Users.
