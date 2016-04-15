@@ -35,6 +35,7 @@ end
 def update
     if @prob.update_attributes(prob_params)
       redirect_to prob_path
-    else
+    end
+end
 
 end
