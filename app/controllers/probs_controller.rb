@@ -34,7 +34,7 @@ class ProbsController < ApplicationController
 
   def create
     @user = User.find(session[:user_id])
-    @prob = Prob.new(prob_params)
+    @prob = @user.probs.new(prob_params)
 
     if @prob.save
       redirect_to prob_path(@prob.id)

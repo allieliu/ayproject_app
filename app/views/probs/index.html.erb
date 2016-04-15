@@ -5,10 +5,9 @@ User: <%= @user.name %> <%= image_tag @user.image_url %>
 <%= link_to 'Add a word!', probs_new_path %>
 
 <ul>
-
   <% @probs.each do |prob| %>
     <li>
-      <%= link_to prob.word, prob_path(prob)%>
+      <%= link_to prob.word, prob_path(prob)%> by <%= prob.user.name %>
     </li>
   <% end %>
   </ul>
