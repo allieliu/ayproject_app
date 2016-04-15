@@ -1,3 +1,9 @@
+##To access Twitionary, all you need is the Heroku link:
+https://warm-mountain-12478.herokuapp.com/
+
+##Trello:
+https://trello.com/b/6xof1NLx/twitionary
+
 Twitionary is an API intended for Twitter Users.
 
 The evolution of slang is a quickly evolving beast. One day your mutuals could be saying 'dragged' or 'clocked', and the next day 'flop'. Don't even know what a mutual is? You're in the right place!
@@ -5,8 +11,4 @@ The evolution of slang is a quickly evolving beast. One day your mutuals could b
 Any person with an active Twitter account can log in with their
 account and can enter any slang with their definition. Users can also view what others have already submitted.
 
-To access Twitionary, all you need is the Heroku link:
-(https://warm-mountain-12478.herokuapp.com/ "Heroku")
-
-(https://trello.com/b/6xof1NLx/twitionary "Trello")
 
