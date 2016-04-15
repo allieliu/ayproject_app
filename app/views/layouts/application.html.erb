@@ -10,9 +10,9 @@
 
 <div class="nav navbar-nav">
   <%= link_to 'Sign into Twitter', '/auth/twitter?force_login=true' %>
+  <%= link_to 'Log Out', logout_path, method: :delete %>
 </div>
 
-<%= link_to "Log Out", logout_path, method: :delete %>
 
 
 <%= yield %>
