@@ -3,18 +3,22 @@ class ProbsController < ApplicationController
 
 
   def index
+    @user = User.find(session[:user_id])
     @probs = Prob.all
   end
 
   def new
+    @user = User.find(session[:user_id])
     @prob = Prob.new
   end
 
   def edit
+    @user = User.find(session[:user_id])
     @prob = Prob.find(params[:id])
   end
 
   def update
+    @user = User.find(session[:user_id])
     @prob = Prob.find(params[:id])
     if @prob.update_attributes(prob_params)
       redirect_to prob_path(@prob)
@@ -23,12 +27,13 @@ class ProbsController < ApplicationController
     end
   end
 
-
   def show
+    @user = User.find(session[:user_id])
     @prob = Prob.find(params[:id])
   end
 
   def create
+    @user = User.find(session[:user_id])
     @prob = Prob.new(prob_params)
 
     if @prob.save
@@ -39,6 +44,7 @@ class ProbsController < ApplicationController
   end
 
   def destroy
+    @user = User.find(session[:user_id])
     @prob = Prob.find(params[:id])
     @prob.destroy
     redirect_to probs_path

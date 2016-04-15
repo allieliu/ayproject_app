@@ -21,6 +21,7 @@ def index
 end
 
 def show
+  @user = User.find(session[:user_id])
   redirect_to('/') unless session[:uid]
 end
 
