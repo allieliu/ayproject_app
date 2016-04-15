@@ -1,4 +1,4 @@
-<%= form_for(Prob.new) do |f| %>
+<%= form_for(@prob) do |f| %>
 
   <div>
   <%= f.label(:word) %>
@@ -7,7 +7,7 @@
 
   <div>
   <%= f.label(:definition) %>
-  <%= f.text_field(:definition) %>
+  <%= f.text_area(:definition, size: "20x5") %>
   </div>
 
   <%= f.submit %>

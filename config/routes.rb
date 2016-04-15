@@ -19,6 +19,16 @@ Rails.application.routes.draw do
 
   post '/probs' => 'probs#create'
 
+  get '/probs/:id' => 'probs#show', as: :prob
+
+  delete '/probs/:id' => 'probs#destroy'
+
+  get 'probs/:id/edit' => 'probs#edit', as: :edit_prob
+
+  patch 'probs/:id' => 'probs#update'
+
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,0 +1,12 @@
+<body>
+
+<h3>Word: <%= @prob.word %></h3>
+<p><%= @prob.definition %></p>
+
+</body>
+
+<%= link_to 'Edit your entry!', edit_prob_path(@prob.id) %>
+<br>
+<%= link_to 'Delete your word!', prob_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+<br>
+<%= link_to "View all words!", probs_path %>

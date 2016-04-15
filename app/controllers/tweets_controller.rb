@@ -23,7 +23,7 @@ def create
   @Prob.new(prob_params)
 
   if @prob.save
-    redirect_to bean_path(@prob)
+    redirect_to prob_path(@prob)
   else
     render :new
   end
